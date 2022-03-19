@@ -6,7 +6,7 @@ A minimal implementation of the mechanics in the sliding puzzle game. Developed 
 ## Usage: 
 The repository comes with a complete makefile. 
 
-<img src="MysticSquare_README/pic1.png" width=600>
+<img src="MysticSquare_README/pic1.jpg" width=600>
 
 
 ## Commands:
