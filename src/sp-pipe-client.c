@@ -51,7 +51,7 @@ void init_client(){
         if(won)
             fprintf(stdout,"\nWinner winner Chicken Dinner.\n");     
           
-        fprintf(stdout,"Menu: [n]ew, [p]rint, [m]ove, [s]ave, [l]oad, [q]uit? ");
+        fprintf(stdout,"Menu: [h]elp [n]ew, [p]rint, [m]ove, [s]ave, [l]oad, [q]uit? ");
         char input;
         scanf(" %c", &input);
         switch(input){
@@ -87,6 +87,19 @@ void init_client(){
                 int matrix_board[(curr_size*curr_size)]; // size squared is the number of entries in the board
                 read(server_to_client[0], &matrix_board, sizeof(matrix_board)); 
                 display(matrix_board,curr_size); // method for displaying the board
+                break;
+            }
+            case 'h':
+            {
+                printf("\n--------------------- Game Manual ---------------------\n\
+                [h]elp:  Displays the manual for the menu options \n\
+                [n]ew:   Prompts for a size (1 integer) and restarts the game with a new gameboard of the size inputted \n\
+                [p]rint: Displays the current game state\n\
+                [m]ove:  Prompts for a tile to move and moves it if permissible \n\
+                [s]ave:  Saves the current state of the game\n\
+                [l]oad:  Loads a previously saved game state\n\
+                [q]uit:  Quit the game\n\
+                -------------------------------------------------------\n");
                 break;
             }
             case 'm':
