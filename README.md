@@ -10,6 +10,6 @@ The repository comes with a complete makefile.
 
 
 ## Commands:
-The following commands are currently present for the discord bot, you may tinker with the scripts and add more commands or use the scripts for a different platform.
+After following the instructions above. By pressing "h", as shown in prompted menu, you will be given a list of the different commands and a brief description for each.
 
-<img src="MysticSquare_README/pic2.png" width=500>
+<img src="MysticSquare_README/pic2.png" width=700>
